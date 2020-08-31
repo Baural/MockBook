@@ -12,11 +12,10 @@ class NotesTypeStorage{
     static var shared = NotesTypeStorage()
     
     var notesType = [
-                    NotesTypeList(notesTypeName: "Focus"),
-                    NotesTypeList(notesTypeName: "Code"),
-                     NotesTypeList(notesTypeName: "System design"),
-                     NotesTypeList(notesTypeName: "Interview"),
-                     NotesTypeList(notesTypeName: "Roles"),
-                     NotesTypeList(notesTypeName: "Behavier"),
-                     NotesTypeList(notesTypeName: "Sport")]
+        NotesTypeList(notesTypeName: "Focus", collectionIndexRow: 0),
+        NotesTypeList(notesTypeName: "Code", collectionIndexRow: 0),
+        NotesTypeList(notesTypeName: "System design", collectionIndexRow: 0),
+        NotesTypeList(notesTypeName: "Interview", collectionIndexRow: 0),
+        NotesTypeList(notesTypeName: "Read List", collectionIndexRow: 0)
+                    ]
 }

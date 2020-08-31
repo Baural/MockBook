@@ -10,8 +10,10 @@ import Foundation
 
 class NotesTypeList {
     let notesTypeName: String
+     let collectionIndexRow: Int
     
-    init(notesTypeName: String) {
+    init(notesTypeName: String, collectionIndexRow: Int) {
         self.notesTypeName = notesTypeName
+        self.collectionIndexRow = collectionIndexRow
     }
 }

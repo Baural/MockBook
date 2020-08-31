@@ -27,7 +27,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="notesType_cell" rowHeight="194" id="tJv-w2-g1d" customClass="NotesTypeTableViewCell" customModule="MockBock" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="notes_table_cell" rowHeight="194" id="tJv-w2-g1d" customClass="NotesTypeTableViewCell" customModule="MockBock" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="194"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tJv-w2-g1d" id="lQ6-8o-R5E">
@@ -35,7 +35,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Focus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYz-Le-pqu">
-                                                    <rect key="frame" x="24" y="8" width="50.5" height="0.0"/>
+                                                    <rect key="frame" x="24" y="8" width="49.5" height="0.0"/>
                                                     <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="18"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -46,15 +46,15 @@
                                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LFH-Lb-lZb">
                                                             <rect key="frame" x="0.0" y="0.0" width="343" height="178"/>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                            <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qRf-n4-BjA">
+                                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qRf-n4-BjA">
                                                                 <size key="itemSize" width="184" height="135"/>
                                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                             </collectionViewFlowLayout>
                                                             <cells>
-                                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="iod-wA-4vW" customClass="ContentCollectionViewCell" customModule="MockBock" customModuleProvider="target">
-                                                                    <rect key="frame" x="79.5" y="0.0" width="184" height="135"/>
+                                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="notes_collection_cell" id="iod-wA-4vW" customClass="ContentCollectionViewCell" customModule="MockBock" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="21.5" width="184" height="135"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SaF-mx-BzK">
                                                                         <rect key="frame" x="0.0" y="0.0" width="184" height="135"/>
@@ -64,13 +64,13 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="184" height="135"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHk-Fh-Hzy">
-                                                                                        <rect key="frame" x="16" y="16" width="152" height="22"/>
+                                                                                        <rect key="frame" x="16" y="16" width="152" height="21"/>
                                                                                         <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="18"/>
                                                                                         <nil key="textColor"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXF-0Z-jWX">
-                                                                                        <rect key="frame" x="16" y="46" width="152" height="44"/>
+                                                                                        <rect key="frame" x="16" y="45" width="152" height="42"/>
                                                                                         <string key="text">What are you goal
 on this year?
 What are you looking for?</string>
@@ -91,6 +91,7 @@ What are you looking for?</string>
                                                                                 </constraints>
                                                                             </view>
                                                                         </subviews>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="bottom" secondItem="faE-kH-6g9" secondAttribute="bottom" id="JIQ-LE-qwZ"/>
                                                                             <constraint firstItem="faE-kH-6g9" firstAttribute="top" secondItem="SaF-mx-BzK" secondAttribute="top" id="YMO-YB-a0S"/>
@@ -106,9 +107,13 @@ What are you looking for?</string>
                                                                     </connections>
                                                                 </collectionViewCell>
                                                             </cells>
+                                                            <connections>
+                                                                <outlet property="dataSource" destination="BYZ-38-t0r" id="MtA-hH-XiX"/>
+                                                                <outlet property="delegate" destination="BYZ-38-t0r" id="GCE-dU-bg3"/>
+                                                            </connections>
                                                         </collectionView>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="backgroundColor" name="Color"/>
                                                     <constraints>
                                                         <constraint firstItem="LFH-Lb-lZb" firstAttribute="leading" secondItem="xME-gg-qi1" secondAttribute="leading" id="2Dv-ld-if6"/>
                                                         <constraint firstItem="LFH-Lb-lZb" firstAttribute="leading" secondItem="xME-gg-qi1" secondAttribute="leading" id="4gM-Id-2bB"/>

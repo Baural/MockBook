@@ -16,7 +16,9 @@ class ContentCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        miniCardView.backgroundColor = UIColor.white
+        miniCardView.layer.borderWidth = 2
+        miniCardView.layer.borderColor = UIColor(red:244/255, green:246/255, blue:251/255, alpha: 1).cgColor
         miniCardView.layer.cornerRadius = 16
         miniCardView.layer.masksToBounds = true
     }
